@@ -52,13 +52,24 @@ cd <dirname>     # changes directory
 pwd              # tells you where you currently are
 
 
+# 1.4. SSH, System Info & Network Commands.
 
-# 1.3. About You & Process Commands.
 
+ssh user@host            # connects to host as user
+ssh -p <port> user@host  # connects to host on specified port as user
+ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
 
 whoami                 # returns your username
 passwd                 # lets you change your password
 quota -v               # shows what your disk quota is
+date                   # shows the current date and time
+cal                    # shows the month's calendar
+uptime                 # shows current uptime
+w                      # displays whois online
+finger <user>          # displays information about user
+uname -a               # shows kernel information
+man <command>          # shows the manual for specified command
+df                     # shows disk usage
 du <filename>          # shows the disk usage of the files and directories in filename (du -s give only a total)
 last <yourUsername>    # lists your last logins
 ps -u yourusername     # lists your processes
@@ -69,10 +80,20 @@ bg                     # lists stopped or background jobs ; resume a stopped job
 fg                     # brings the most recent job in the foreground
 fg <job>               # brings job to the foreground
 
+ping <host>     # pings host and outputs results
+whois <domain>  # get whois information for domain
+dig <domain>    # get DNS information for domain
+dig -x <host>   # reverse lookup host
+wget <file>     # downloads file
 
-# 1.4. SSH
+
+# 1.5. Shortcuts.
 
 
-ssh user@host            # connects to host as user
-ssh -p <port> user@host  # connects to host on specified port as user
-ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
+ctrl+c  # halts the current command
+ctrl+z  # stops the current command, resume with fg in the foreground or bg in the background
+ctrl+d  # log out of current session, similar to exit
+ctrl+w  # erases one word in the current line
+ctrl+u  # erases the whole  line
+!!      # repeats the last command
+exit    # log out of current session
