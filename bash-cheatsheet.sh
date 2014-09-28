@@ -39,7 +39,7 @@ lpq                           # check out the printer queue
 lprm <jobnumber>              # remove something from the printer queue
 genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
 dvips <filename>              # print .dvi files (i.e. files produced by LaTeX)
-grep string <filenames>       # looks for the string in the files
+grep pattern <filenames>      # looks for the string in the files
 
 
 # 1.2. Directory Commands.
@@ -52,15 +52,19 @@ pwd              # tells you where you currently are
 
 
 
-# 1.3. About You Commands.
+# 1.3. About You & Process Commands.
 
 
-whoami               # returns your username
-passwd               # lets you change your password
-ps -u yourusername   # lists your processes
-kill <PID>           # kills (ends) the processes with the ID you gave
-quota -v             # shows what your disk quota is
-du <filename>        # shows the disk usage of the files and directories in filename (du -s give only a total)
-last <yourUsername>  # lists your last logins
-
+whoami                 # returns your username
+passwd                 # lets you change your password
+quota -v               # shows what your disk quota is
+du <filename>          # shows the disk usage of the files and directories in filename (du -s give only a total)
+last <yourUsername>    # lists your last logins
+ps -u yourusername     # lists your processes
+kill <PID>             # kills (ends) the processes with the ID you gave
+killall <processname>  # kill all processes with the name
+top                    # displays your currently active processes
+bg                     # lists stopped or background jobs ; resume a stopped job in the background
+fg                     # brings the most recent job in the foreground
+fg <job>               # brings job to the foreground
 
