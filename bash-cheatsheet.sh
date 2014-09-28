@@ -102,8 +102,9 @@ exit    # log out of current session
 # 2. Basic Shell Programming.
 
 
-VARNAME=hello  # define a variable
-echo $VARNAME  # check a variable's value
+varname=hello         # define a variable
+echo $varname         # check a variable's value
+export VARNAME=value  # define an environment variable
 
 
 # 3. Tips and Tricks.
