@@ -97,3 +97,11 @@ ctrl+w  # erases one word in the current line
 ctrl+u  # erases the whole  line
 !!      # repeats the last command
 exit    # log out of current session
+
+
+# 2. Basic Shell Programming.
+
+
+VARNAME=hello  # define a variable
+echo $VARNAME  # check a variable's value
+
