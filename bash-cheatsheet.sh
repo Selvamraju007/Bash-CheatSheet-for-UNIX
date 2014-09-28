@@ -52,7 +52,7 @@ cd <dirname>     # changes directory
 pwd              # tells you where you currently are
 
 
-# 1.4. SSH, System Info & Network Commands.
+# 1.3. SSH, System Info & Network Commands.
 
 
 ssh user@host            # connects to host as user
@@ -87,7 +87,7 @@ dig -x <host>            # reverse lookup host
 wget <file>              # downloads file
 
 
-# 1.5. Shortcuts.
+# 1.4. Shortcuts.
 
 
 ctrl+c  # halts the current command
