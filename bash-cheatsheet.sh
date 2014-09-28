@@ -5,11 +5,11 @@
 # 1. Bash Basics.
 
 
-echo $SHELL         # display the shell you're using
-echo $BASH_VERSION  # display bash version
+echo $SHELL         # displays the shell you're using
+echo $BASH_VERSION  # displays bash version
 
 bash                # if you want to use bash (type exit to go back to your normal shell)
-whereis bash        # to find out where bash is on your system
+whereis bash        # finds out where bash is on your system
 
 
 # 1.1. File Commands.
@@ -45,9 +45,9 @@ grep string <filenames>       # looks for the string in the files
 # 1.2. Directory Commands.
 
 
-mkdir <dirname>  # make a new directory
-cd               # change to home
-cd <dirname>     # change directory
+mkdir <dirname>  # makes a new directory
+cd               # changes to home
+cd <dirname>     # changes directory
 pwd              # tells you where you currently are
 
 
@@ -58,8 +58,8 @@ pwd              # tells you where you currently are
 whoami               # returns your username
 passwd               # lets you change your password
 ps -u yourusername   # lists your processes
-kill <PID>           # kill (ends) the processes with the ID you gave
-quota -v             # show what your disk quota is
+kill <PID>           # kills (ends) the processes with the ID you gave
+quota -v             # shows what your disk quota is
 du <filename>        # shows the disk usage of the files and directories in filename (du -s give only a total)
 last <yourUsername>  # lists your last logins
 
