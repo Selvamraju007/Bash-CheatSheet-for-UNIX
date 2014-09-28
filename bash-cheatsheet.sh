@@ -4,6 +4,7 @@
 
 # 1. Bash Basics.
 
+export              # displays all environment variables
 
 echo $SHELL         # displays the shell you're using
 echo $BASH_VERSION  # displays bash version
@@ -102,9 +103,10 @@ exit    # log out of current session
 # 2. Basic Shell Programming.
 
 
-varname=hello         # define a variable
-echo $varname         # check a variable's value
-export VARNAME=value  # define an environment variable
+varname=value          # define a variable
+varname=value command  # define a variable to be in the environment of a particular subprocess
+echo $varname          # check a variable's value
+export VARNAME=value   # define an environment variable
 
 
 # 3. Tips and Tricks.
