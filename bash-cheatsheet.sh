@@ -15,14 +15,19 @@ whereis bash        # to find out where bash is on your system
 # 1.1. File Commands.
 
 
-ls                  # lists your files
-ls -l               # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
-ls -a               # lists all files, including hidden files
-more <filename>     # shows the first part of a file (move with space and type q to quit)
-emacs <filename>    # lets you create and edit a file
-mv <filename1> <filename2>  # moves a file
-cp <filename1> <filename2>  # copies a file
-rm <filename>               # removes a file
+ls                            # lists your files
+ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
+ls -a                         # lists all files, including hidden files
+ln -s <filename> <link>       # creates symbolic link to file
+touch <filename>              # creates or updates your file
+cat > <filename>              # places standard input into file
+more <filename>               # shows the first part of a file (move with space and type q to quit)
+head <filename>               # outputs the first 10 lines of file
+tail <filename>               # outputs the last 10 lines of file (useful with -f option)
+emacs <filename>              # lets you create and edit a file
+mv <filename1> <filename2>    # moves a file
+cp <filename1> <filename2>    # copies a file
+rm <filename>                 # removes a file
 diff <filename1> <filename2>  # compares files, and shows where they differ
 wc <filename>                 # tells you how many lines, words and characters there are in a file
 chmod -options <filename>     # lets you change the read, write, and execute permissions on your files
@@ -41,6 +46,7 @@ grep string <filenames>       # looks for the string in the files
 
 
 mkdir <dirname>  # make a new directory
+cd               # change to home
 cd <dirname>     # change directory
 pwd              # tells you where you currently are
 
