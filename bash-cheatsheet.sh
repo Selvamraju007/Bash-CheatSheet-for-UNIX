@@ -39,7 +39,8 @@ lpq                           # check out the printer queue
 lprm <jobnumber>              # remove something from the printer queue
 genscript                     # converts plain text files into postscript for printing and gives you some options for formatting
 dvips <filename>              # print .dvi files (i.e. files produced by LaTeX)
-grep pattern <filenames>      # looks for the string in the files
+grep <pattern> <filenames>    # looks for the string in the files
+grep -r <pattern> <dir>       # search recursively for pattern in directory
 
 
 # 1.2. Directory Commands.
@@ -68,3 +69,10 @@ bg                     # lists stopped or background jobs ; resume a stopped job
 fg                     # brings the most recent job in the foreground
 fg <job>               # brings job to the foreground
 
+
+# 1.4. SSH
+
+
+ssh user@host            # connects to host as user
+ssh -p <port> user@host  # connects to host on specified port as user
+ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
