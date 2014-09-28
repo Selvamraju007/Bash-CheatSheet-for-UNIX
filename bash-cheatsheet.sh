@@ -105,3 +105,17 @@ exit    # log out of current session
 VARNAME=hello  # define a variable
 echo $VARNAME  # check a variable's value
 
+
+# 3. Tips and Tricks.
+
+
+# set an alias
+cd; nano .bash_profile
+> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add you alias in .bash_profile
+
+# quickly go to a specific directory
+cd; nano .bash_profile
+> shopt -s cdable_vars
+> websites="/Users/mac/Documents/websites"
+source .bash_profile
+cd websites
