@@ -4,6 +4,7 @@
 
 # 1. Bash Basics.
 
+
 export              # displays all environment variables
 
 echo $SHELL         # displays the shell you're using
