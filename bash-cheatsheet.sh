@@ -117,7 +117,7 @@ export VARNAME=value   # define an environment variable
 cd; nano .bash_profile
 > alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add you alias in .bash_profile
 
-# quickly go to a specific directory
+# to quickly go to a specific directory
 cd; nano .bash_profile
 > shopt -s cdable_vars
 > websites="/Users/mac/Documents/websites"
