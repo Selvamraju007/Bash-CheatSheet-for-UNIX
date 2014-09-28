@@ -117,5 +117,6 @@ cd; nano .bash_profile
 cd; nano .bash_profile
 > shopt -s cdable_vars
 > websites="/Users/mac/Documents/websites"
+
 source .bash_profile
 cd websites
