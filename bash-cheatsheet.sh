@@ -153,6 +153,9 @@ declare -f          # displays all defined functions in your login session
 # 2.3. Flow Control.
 
 
+statement1 && statement2  # and operator
+statement1 || statement2  # or operator
+
 if condition
 then
   statements
