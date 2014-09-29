@@ -172,7 +172,7 @@ cd; nano .bashrc
 # to quickly go to a specific directory
 cd; nano .bashrc
 > shopt -s cdable_vars
-> websites="/Users/mac/Documents/websites"
+> export websites="/Users/mac/Documents/websites"
 
 source .bashrc
 cd websites
