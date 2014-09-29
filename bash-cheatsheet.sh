@@ -149,6 +149,19 @@ unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
 
 
+# 2.3. Flow Control.
+
+
+if condition
+then
+  statements
+[elif condition
+  then statements...]
+[else
+  statements]
+fi
+
+
 # 3. Tips and Tricks.
 
 
