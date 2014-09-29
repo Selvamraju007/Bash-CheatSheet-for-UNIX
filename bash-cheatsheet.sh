@@ -127,6 +127,12 @@ ${variable//pattern/string}  # the longest match to pattern in variable is repla
 
 ${#varname}                  # returns the length of the value of the variable as a character string
 
+*(patternlist)               # matches zero or more occurences of the given patterns
++(patternlist)               # matches one or more occurences of the given patterns
+?(patternlist)               # matches zero or one occurence of the given patterns
+@(patternlist)               # matches exactly one of the given patterns
+!(patternlist)               # matches anything except one of the given patterns
+
 
 # 2.2. Functions.
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
