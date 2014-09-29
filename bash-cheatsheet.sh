@@ -115,6 +115,7 @@ export VARNAME=value   # define an environment variable
 
 # 2.2. Functions.
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
+# $@ is equal to "$1" "$2"... "$N", where N is the number of positional paramaters. $# holds the number of positional parameters.
 
 
 functname() {
