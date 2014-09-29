@@ -121,6 +121,8 @@ functname() {
   shell commands
 }
 
+unset -f functname  # deletes a function definition
+
 
 # 3. Tips and Tricks.
 
