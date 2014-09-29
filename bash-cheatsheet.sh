@@ -122,6 +122,7 @@ functname() {
 }
 
 unset -f functname  # deletes a function definition
+declare -f          # displays all defined functions in your login session
 
 
 # 3. Tips and Tricks.
