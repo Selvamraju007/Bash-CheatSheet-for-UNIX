@@ -112,6 +112,10 @@ varname=value command  # define a variable to be in the environment of a particu
 echo $varname          # check a variable's value
 export VARNAME=value   # define an environment variable
 
+${varname:-word}       # if varname exists and isn't null, return its value; otherwise return word
+${varname:=word}       # if varname exists and isn't null, return its value; otherwise set it word and then return its value
+${varname:?message}    # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
+
 
 # 2.2. Functions.
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
