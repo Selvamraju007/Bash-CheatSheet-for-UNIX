@@ -167,7 +167,7 @@ fi
 
 # set an alias
 cd; nano .bash_profile
-> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add you alias in .bash_profile
+> alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
 
 # to quickly go to a specific directory
 cd; nano .bashrc
