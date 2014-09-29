@@ -107,16 +107,23 @@ exit    # log out of current session
 # 2.1. Variables.
 
 
-varname=value             # define a variable
-varname=value command     # define a variable to be in the environment of a particular subprocess
-echo $varname             # check a variable's value
-export VARNAME=value      # define an environment variable
+varname=value                # define a variable
+varname=value command        # define a variable to be in the environment of a particular subprocess
+echo $varname                # check a variable's value
+export VARNAME=value         # define an environment variable
 
-${varname:-word}          # if varname exists and isn't null, return its value; otherwise return word
-${varname:=word}          # if varname exists and isn't null, return its value; otherwise set it word and then return its value
-${varname:?message}       # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
-${varname:+word}          # if varname exists and isn't null, return word; otherwise return null
-${varname:offset:length}  # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
+${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
+${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
+${varname:+word}             # if varname exists and isn't null, return word; otherwise return null
+${varname:offset:length}     # performs substring expansion. It returns the substring of $varname starting at offset and up to length characters
+
+${variable#pattern}          # if the pattern matches the beginning of the variable's value, delete the shortest part that matches and return the rest
+${variable##pattern}         # if the pattern matches the beginning of the variable's value, delete the longest part that matches and return the rest
+${variable%pattern}          # if the pattern matches the end of the variable's value, delete the shortest part that matches and return the rest
+${variable%%pattern}         # if the pattern matches the end of the variable's value, delete the longest part that matches and return the rest
+${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
+${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
 
 
 # 2.2. Functions.
