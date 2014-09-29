@@ -125,6 +125,8 @@ ${variable%%pattern}         # if the pattern matches the end of the variable's 
 ${variable/pattern/string}   # the longest match to pattern in variable is replaced by string. Only the first match is replaced
 ${variable//pattern/string}  # the longest match to pattern in variable is replaced by string. All matches are replaced
 
+${#varname}                  # returns the length of the value of the variable as a character string
+
 
 # 2.2. Functions.
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
