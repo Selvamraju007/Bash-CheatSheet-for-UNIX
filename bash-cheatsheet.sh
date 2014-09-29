@@ -104,10 +104,21 @@ exit    # log out of current session
 # 2. Basic Shell Programming.
 
 
+# 2.1. Variables.
+
+
 varname=value          # define a variable
 varname=value command  # define a variable to be in the environment of a particular subprocess
 echo $varname          # check a variable's value
 export VARNAME=value   # define an environment variable
+
+
+# 2.2. Functions.
+
+
+function functname {
+  shell commands
+}
 
 
 # 3. Tips and Tricks.
