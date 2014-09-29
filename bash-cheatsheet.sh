@@ -117,7 +117,7 @@ export VARNAME=value   # define an environment variable
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 
 
-functionName() {
+functname() {
   shell commands
 }
 
