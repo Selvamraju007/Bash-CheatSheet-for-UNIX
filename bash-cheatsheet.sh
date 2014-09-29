@@ -110,6 +110,7 @@ exit    # logs out of current session
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
 echo $varname                # checks a variable's value
+echo $?                      # displays the exit status of the last command
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
 ${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
