@@ -83,9 +83,9 @@ fg                       # brings the most recent job in the foreground
 fg <job>                 # brings job to the foreground
 
 ping <host>              # pings host and outputs results
-whois <domain>           # get whois information for domain
-dig <domain>             # get DNS information for domain
-dig -x <host>            # reverse lookup host
+whois <domain>           # gets whois information for domain
+dig <domain>             # gets DNS information for domain
+dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
 
 
@@ -94,11 +94,11 @@ wget <file>              # downloads file
 
 ctrl+c  # halts the current command
 ctrl+z  # stops the current command, resume with fg in the foreground or bg in the background
-ctrl+d  # log out of current session, similar to exit
+ctrl+d  # logs out of current session, similar to exit
 ctrl+w  # erases one word in the current line
 ctrl+u  # erases the whole  line
 !!      # repeats the last command
-exit    # log out of current session
+exit    # logs out of current session
 
 
 # 2. Basic Shell Programming.
@@ -107,10 +107,10 @@ exit    # log out of current session
 # 2.1. Variables.
 
 
-varname=value                # define a variable
-varname=value command        # define a variable to be in the environment of a particular subprocess
-echo $varname                # check a variable's value
-export VARNAME=value         # define an environment variable
+varname=value                # defines a variable
+varname=value command        # defines a variable to be in the environment of a particular subprocess
+echo $varname                # checks a variable's value
+export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
 ${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
 ${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
