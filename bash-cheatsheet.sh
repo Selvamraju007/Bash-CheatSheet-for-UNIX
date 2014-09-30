@@ -156,6 +156,9 @@ declare -f          # displays all defined functions in your login session
 statement1 && statement2  # and operator
 statement1 || statement2  # or operator
 
+-a                        # and operator inside a test conditional expression
+-o                        # or operator inside a test conditional expression
+
 str1=str2                 # str1 matches str2
 str1!=str2                # str1 does not match str2
 str1<str2                 # str1 is less than str2
