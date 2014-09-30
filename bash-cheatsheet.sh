@@ -165,6 +165,7 @@ str1<str2                 # str1 is less than str2
 str1>str2                 # str1 is greater than str2
 -n str1                   # str1 is not null (has length greater than 0)
 -z str1                   # str1 is null (has length 0)
+
 -a file                   # file exists
 -d file                   # file exists and is a directory
 -e file                   # file exists; same -a
@@ -178,6 +179,13 @@ str1>str2                 # str1 is greater than str2
 -G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
 file1 -nt file2           # file1 is newer than file2
 file1 -ot file2           # file1 is older than file2
+
+-lt                       # less than
+-le                       # less than or equal
+-eq                       # equal
+-ge                       # greater than or equal
+-gt                       # greater than
+-ne                       # not equal
 
 if condition
 then
