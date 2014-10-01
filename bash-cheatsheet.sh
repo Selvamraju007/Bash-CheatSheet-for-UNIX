@@ -219,6 +219,14 @@ do
   statements that can use $name
 done
 
+while condition; do
+  statements
+done
+
+until condition; do
+  statements
+done
+
 
 # 3. Tips and Tricks.
 
