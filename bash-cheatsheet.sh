@@ -206,6 +206,14 @@ do
   statements that can use $name
 done
 
+case expression in
+  pattern1 )
+    statements ;;
+  pattern2 )
+    statements ;;
+  ...
+esac
+
 
 # 3. Tips and Tricks.
 
