@@ -214,6 +214,11 @@ case expression in
   ...
 esac
 
+select name [in list]
+do
+  statements that can use $name
+done
+
 
 # 3. Tips and Tricks.
 
