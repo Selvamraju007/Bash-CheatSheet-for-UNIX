@@ -113,6 +113,13 @@ echo $varname                # checks a variable's value
 echo $?                      # displays the exit status of the last command
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
+declare -a                   # the variables are treaded as arrays
+declare -f                   # uses funtion names only
+declare -F                   # displays function names without definitions
+declare -i                   # the variables are treaded as integers
+declare -r                   # makes the variables read-only
+declare -x                   # marks the variables for export via the environment
+
 ${varname:-word}             # if varname exists and isn't null, return its value; otherwise return word
 ${varname:=word}             # if varname exists and isn't null, return its value; otherwise set it word and then return its value
 ${varname:?message}          # if varname exists and isn't null, return its value; otherwise print varname, followed by message and abort the current command or script
@@ -135,13 +142,6 @@ ${#varname}                  # returns the length of the value of the variable a
 !(patternlist)               # matches anything except one of the given patterns
 
 $(UNIX command)              # command substitution: runs the command and returns standard output
-
-declare -a                   # the variables are treaded as arrays
-declare -f                   # uses funtion names only
-declare -F                   # displays function names without definitions
-declare -i                   # the variables are treaded as integers
-declare -r                   # makes the variables read-only
-declare -x                   # marks the variables for export via the environment
 
 
 # 2.2. Functions.
