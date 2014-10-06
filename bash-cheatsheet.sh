@@ -136,6 +136,13 @@ ${#varname}                  # returns the length of the value of the variable a
 
 $(UNIX command)              # command substitution: runs the command and returns standard output
 
+declare -a                   # the variables are treaded as arrays
+declare -f                   # uses funtion names only
+declare -F                   # displays function names without definitions
+declare -i                   # the variables are treaded as integers
+declare -r                   # makes the variables read-only
+declare -x                   # marks the variables for export via the environment
+
 
 # 2.2. Functions.
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
