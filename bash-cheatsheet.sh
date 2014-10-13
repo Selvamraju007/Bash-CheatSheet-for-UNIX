@@ -119,7 +119,7 @@ array[2] = val
 array=([2]=val [0]=val [1]=val)
 array(val val val)
 
-${array[i]}                  # display array's value for this index. If no index is supplied, array element 0 is assumed
+${array[i]}                  # displays array's value for this index. If no index is supplied, array element 0 is assumed
 
 declare -a                   # the variables are treaded as arrays
 declare -f                   # uses funtion names only
