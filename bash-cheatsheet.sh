@@ -213,6 +213,11 @@ do
   statements that can use $name
 done
 
+for (( initialisation ; ending condition ; update ))
+do
+  statements...
+done
+
 case expression in
   pattern1 )
     statements ;;
