@@ -113,7 +113,7 @@ echo $varname                # checks a variable's value
 echo $?                      # displays the exit status of the last command
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
-array[0] = val
+array[0] = val               # several ways to define an array
 array[1] = val
 array[2] = val
 array=([2]=val [0]=val [1]=val)
