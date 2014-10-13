@@ -113,6 +113,12 @@ echo $varname                # checks a variable's value
 echo $?                      # displays the exit status of the last command
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
 
+array[0] = val
+array[1] = val
+array[2] = val
+array=([2]=val [0]=val [1]=val)
+array(val val val)
+
 declare -a                   # the variables are treaded as arrays
 declare -f                   # uses funtion names only
 declare -F                   # displays function names without definitions
