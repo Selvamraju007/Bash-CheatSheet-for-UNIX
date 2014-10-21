@@ -259,6 +259,14 @@ cmd1|cmd2  # pipe; take standard output of cmd1 as standard input to cmd2
 >> file    # direct standard output to file; append to file if it already exists
 >|file     # force standard output to file even if noclobber is set
 n>|file    # force output to file from file descriptor n even if noclobber is set
+<> file    # use file as both standard input and standard output
+n<>file    # use file as both input and output for file descriptor n
+<<label    # here-document
+n>file     # direct file descriptor n to file
+n<file     # take file descriptor n from file
+n>>file    # direct file description n to file; append to file if it already exists
+n>&        # duplicate standard output to file descriptor n
+n<&        # duplicate standard input from file descriptor n
 
 
 # 4. Tips and Tricks.
