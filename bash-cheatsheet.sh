@@ -253,27 +253,27 @@ done
 # 3. Input/Output Redirectors.
 
 
-cmd1|cmd2  # pipe; take standard output of cmd1 as standard input to cmd2
-> file     # direct standard output to file
-< file     # take standard input from file
->> file    # direct standard output to file; append to file if it already exists
->|file     # force standard output to file even if noclobber is set
-n>|file    # force output to file from file descriptor n even if noclobber is set
-<> file    # use file as both standard input and standard output
-n<>file    # use file as both input and output for file descriptor n
+cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
+> file     # directs standard output to file
+< file     # takes standard input from file
+>> file    # directs standard output to file; append to file if it already exists
+>|file     # forces standard output to file even if noclobber is set
+n>|file    # forces output to file from file descriptor n even if noclobber is set
+<> file    # uses file as both standard input and standard output
+n<>file    # uses file as both input and output for file descriptor n
 <<label    # here-document
-n>file     # direct file descriptor n to file
-n<file     # take file descriptor n from file
-n>>file    # direct file description n to file; append to file if it already exists
-n>&        # duplicate standard output to file descriptor n
-n<&        # duplicate standard input from file descriptor n
+n>file     # directs file descriptor n to file
+n<file     # takes file descriptor n from file
+n>>file    # directs file description n to file; append to file if it already exists
+n>&        # duplicates standard output to file descriptor n
+n<&        # duplicates standard input from file descriptor n
 n>&m       # file descriptor n is made to be a copy of the output file descriptor
 n<&m       # file descriptor n is made to be a copy of the input file descriptor
 &>file     # directs standard output and standard error to file
-<&-        # close the standard input
->&-        # close the standard output
-n>&-       # close the ouput from file descriptor n
-n<&-       # close the input from file descripor n
+<&-        # closes the standard input
+>&-        # closes the standard output
+n>&-       # closes the ouput from file descriptor n
+n<&-       # closes the input from file descripor n
 
 
 # 4. Tips and Tricks.
