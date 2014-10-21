@@ -267,6 +267,11 @@ n<file     # take file descriptor n from file
 n>>file    # direct file description n to file; append to file if it already exists
 n>&        # duplicate standard output to file descriptor n
 n<&        # duplicate standard input from file descriptor n
+n>&m       # file descriptor n is made to be a copy of the output file descriptor
+n<&m       # file descriptor n is made to be a copy of the input file descriptor
+&>file     # directs standard output and standard error to file
+<&-        # close the standard input
+>&-        # close the standard output
 
 
 # 4. Tips and Tricks.
