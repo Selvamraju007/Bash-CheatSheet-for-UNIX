@@ -272,6 +272,8 @@ n<&m       # file descriptor n is made to be a copy of the input file descriptor
 &>file     # directs standard output and standard error to file
 <&-        # close the standard input
 >&-        # close the standard output
+n>&-       # close the ouput from file descriptor n
+n<&-       # close the input from file descripor n
 
 
 # 4. Tips and Tricks.
