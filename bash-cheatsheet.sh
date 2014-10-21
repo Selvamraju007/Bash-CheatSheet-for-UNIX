@@ -250,7 +250,18 @@ until condition; do
 done
 
 
-# 3. Tips and Tricks.
+# 3. Input/Output Redirectors.
+
+
+cmd1|cmd2  # pipe; take standard output of cmd1 as standard input to cmd2
+> file     # direct standard output to file
+< file     # take standard input from file
+>> file    # direct standard output to file; append to file if it already exists
+>|file     # force standard output to file even if noclobber is set
+n>|file    # force output to file from file descriptor n even if noclobber is set
+
+
+# 4. Tips and Tricks.
 
 
 # set an alias
