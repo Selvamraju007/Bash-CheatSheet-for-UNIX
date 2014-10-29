@@ -276,6 +276,13 @@ n>&-       # closes the ouput from file descriptor n
 n<&-       # closes the input from file descripor n
 
 
+# 4. Command-Line Processing Cycle.
+
+
+# The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
+# There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+
+
 # 5. Tips and Tricks.
 
 
