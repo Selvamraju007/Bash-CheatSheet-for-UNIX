@@ -299,7 +299,7 @@ n<&-       # closes the input from file descripor n
 
 myCommand &  # runs job in the background and prompts back the shell
 
-jobs       # lists all jobs (use with -l to see associated PID)
+jobs         # lists all jobs (use with -l to see associated PID)
 
 fg           # brings a background job into the foreground
 fg %+        # brings most recently invoked background job
@@ -308,7 +308,8 @@ fg %N        # brings job number N
 fg %string   # brings job whose command begins with string
 fg %?string  # brings job whose command contains string
 
-
+kill -l      # returns a list of all signals on the system, by name and number
+kill PID     # terminates process with specified PID
 
 
 # 6. Tips and Tricks.
