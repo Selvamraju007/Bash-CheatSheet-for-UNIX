@@ -289,7 +289,29 @@ n>&-       # closes the ouput from file descriptor n
 n<&-       # closes the input from file descripor n
 
 
-# 5. Tips and Tricks.
+# 5. Process Handling.
+
+
+# To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
+# This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
+# Of course, to interupt a job, type CTRL+C.
+
+
+myCommand &  # runs job in the background and prompts back the shell
+
+jobs       # lists all jobs (use with -l to see associated PID)
+
+fg           # brings a background job into the foreground
+fg %+        # brings most recently invoked background job
+fg %-        # brings second most recently invoked background job
+fg %N        # brings job number N
+fg %string   # brings job whose command begins with string
+fg %?string  # brings job whose command contains string
+
+
+
+
+# 6. Tips and Tricks.
 
 
 # set an alias
