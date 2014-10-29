@@ -280,7 +280,7 @@ n<&-       # closes the input from file descripor n
 
 
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
-# There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
+# There are three built-ins that you can use to override this order: command, builtin and enable.
 
 
 command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed.
