@@ -13,6 +13,8 @@ echo $BASH_VERSION  # displays bash version
 bash                # if you want to use bash (type exit to go back to your normal shell)
 whereis bash        # finds out where bash is on your system
 
+clear               # clears content on window (hide displayed lines)
+
 
 # 1.1. File Commands.
 
