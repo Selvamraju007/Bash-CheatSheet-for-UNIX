@@ -316,6 +316,8 @@ kill PID     # terminates process with specified PID
 ps           # prints a line of information about the current running login shell and any processes running under it
 ps -a        # selects all processes with a tty except session leaders
 
+trap cmd sig1 sig2  # executes a command when a signal is received by the script
+
 
 # 6. Tips and Tricks.
 
