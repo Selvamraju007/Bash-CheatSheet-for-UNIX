@@ -318,6 +318,7 @@ ps           # prints a line of information about the current running login shel
 ps -a        # selects all processes with a tty except session leaders
 
 trap cmd sig1 sig2  # executes a command when a signal is received by the script
+trap "" sig1 sig2   # ignores that signals
 
 
 # 6. Tips and Tricks.
