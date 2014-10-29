@@ -323,6 +323,8 @@ trap - sig1 sig2    # resets the action taken when the signal is received to the
 
 disown <PID|JID>    # removes the process from the list of jobs
 
+wait                # waits until all background jobs have finished
+
 
 # 6. Tips and Tricks.
 
