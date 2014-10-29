@@ -322,6 +322,7 @@ trap "" sig1 sig2   # ignores that signals
 
 disown <PID|JID>    # removes the process from the list of jobs
 
+
 # 6. Tips and Tricks.
 
 
