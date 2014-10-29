@@ -320,6 +320,7 @@ ps -a        # selects all processes with a tty except session leaders
 trap cmd sig1 sig2  # executes a command when a signal is received by the script
 trap "" sig1 sig2   # ignores that signals
 
+disown <PID|JID>    # removes the process from the list of jobs
 
 # 6. Tips and Tricks.
 
