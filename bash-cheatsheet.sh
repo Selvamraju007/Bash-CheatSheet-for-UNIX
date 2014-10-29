@@ -256,11 +256,11 @@ done
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
 # There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
-command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed.
-builtin  # looks up only built-in commands, ignoring functions and commands found in PATH.
-enable   # enables and disables shell built-ins.
+command  # removes alias and function lookup. Only built-ins and commands found in the search path are executed
+builtin  # looks up only built-in commands, ignoring functions and commands found in PATH
+enable   # enables and disables shell built-ins
 
-eval     # takes arguments and run them through the command-line processing steps all over again.
+eval     # takes arguments and run them through the command-line processing steps all over again
 
 
 # 4. Input/Output Redirectors.
