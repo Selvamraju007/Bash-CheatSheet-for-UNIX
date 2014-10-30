@@ -354,4 +354,4 @@ set -o verbose      # alternative (set option in script)
 bash -x scriptname  # echo commands after command-line processing
 set -o xtrace       # alternative (set option in script)
 
-trap 'echo $varname' EXIT  # useful when you want to print out the values of variable at the point that your script exits
+trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
