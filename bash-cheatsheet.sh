@@ -362,3 +362,11 @@ function errtrap {
 }
 
 trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exists with non-zero status 
+
+function dbgtrap {
+  echo "badvar is $badvar"
+}
+
+trap dbgtrap DEBUG  # causes the trap code to be executed before every statement in a function or script
+# ...section of code in which the problem occurs...
+trap - DEBUG  # turn off the DEBUG trap
