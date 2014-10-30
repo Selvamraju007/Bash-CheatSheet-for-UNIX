@@ -355,3 +355,11 @@ bash -x scriptname  # echo commands after command-line processing
 set -o xtrace       # alternative (set option in script)
 
 trap 'echo $varname' EXIT  # useful when you want to print out the values of variables at the point that your script exits
+
+
+function errtrap {
+  es=$?
+  echo "ERROR line $1: Command exited with status $es."
+}
+
+trap 'errtrap $LINENO' ERR  # is run whenever a command in the surrounding script or function exists with non-zero status 
