@@ -340,3 +340,17 @@ cd; nano .bashrc
 
 source .bashrc
 cd websites
+
+
+# 7. Debugging Shell Programs.
+
+
+bash -n scriptname  # don't run commands; check for syntax errors only
+set -o noexec       # alternative (set option in script)
+
+bash -v scriptname  # echo commands before running them
+set -o verbose      # alternative (set option in script)
+
+bash -x scriptname  # echo commands after command-line processing
+set -o xtrace       # alternative (set option in script)
+
