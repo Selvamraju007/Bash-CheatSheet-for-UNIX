@@ -112,7 +112,7 @@ exit    # logs out of current session
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
 echo $varname                # checks a variable's value
-echp $$                      # prints process ID of the current shell
+echo $$                      # prints process ID of the current shell
 echo $!                      # prints process ID of the most recently invoked background job
 echo $?                      # displays the exit status of the last command
 export VARNAME=value         # defines an environment variable (will be available in subprocesses)
