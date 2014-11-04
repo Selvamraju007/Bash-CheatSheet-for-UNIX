@@ -1,5 +1,14 @@
-# Bash CheatSheet for Mac OSX
-# http://www.gnu.org/software/bash/manual/bashref.html
+#!/bin/bash
+#####################################################
+# Name: Bash CheatSheet for Mac OSX
+# 
+# A little overlook of all the things you can do
+#
+# Usage:
+#
+# Author: J. Le Coupanec
+# Date: 2014/11/04
+#####################################################
 
 
 # 1. Bash Basics.
