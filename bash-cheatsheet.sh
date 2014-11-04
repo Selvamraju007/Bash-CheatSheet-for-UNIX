@@ -2,7 +2,7 @@
 #####################################################
 # Name: Bash CheatSheet for Mac OSX
 # 
-# A little overlook of all the things you can do
+# A little overlook of the Bash basics
 #
 # Usage:
 #
