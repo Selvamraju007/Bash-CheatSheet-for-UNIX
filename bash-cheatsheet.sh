@@ -36,8 +36,8 @@ CTRL+V  # makes the next character typed verbatim
 CTRL+W  # kills the word behind the cursor
 CTRL+X  # lists the possible filename completefions of the current word
 CTRL+Y  # retrieves (yank) last item killed
+CTRL+Z  # stops the current command, resume with fg in the foreground or bg in the background
 
-CTRL+z  # stops the current command, resume with fg in the foreground or bg in the background
 DELETE  # deletes one character backward
 !!      # repeats the last command
 exit    # logs out of current session
