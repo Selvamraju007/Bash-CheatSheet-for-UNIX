@@ -11,6 +11,22 @@
 #####################################################
 
 
+# 0. Shortcuts.
+
+
+CTRL+A  # move to beginning of line
+CTRL+B  # moves backward one character
+CTRL+C  # halts the current command
+CTRL+D  # deletes one character backward
+
+ctrl+z  # stops the current command, resume with fg in the foreground or bg in the background
+ctrl+d  # logs out of current session, similar to exit
+ctrl+w  # erases one word in the current line
+ctrl+u  # erases the whole  line
+!!      # repeats the last command
+exit    # logs out of current session
+
+
 # 1. Bash Basics.
 
 
