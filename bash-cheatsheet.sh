@@ -18,6 +18,12 @@ CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
 CTRL+C  # halts the current command
 CTRL+D  # deletes one character backward
+CTRL+E  # moves to end of line
+CTRL+F  # moves forward one character
+CTRL+G  # aborts the current editing command and ring the terminal bell
+CTRL+J  # same as RETURN
+CTRL+K  # deletes (kill) forward to end of line
+CTRL+L  # clears screen and redisplay the line
 
 ctrl+z  # stops the current command, resume with fg in the foreground or bg in the background
 ctrl+d  # logs out of current session, similar to exit
