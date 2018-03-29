@@ -156,6 +156,21 @@ ${array[i]}                  # displays array's value for this index. If no inde
 ${#array[i]}                 # to find out the length of any element in the array
 ${#array[@]}                 # to find out how many values there are in the array
 
+# To iterate through an array
+for i in "${array[@]}"                                
+  do echo $i $i
+done
+
+# Get the output of a command like ls as an array
+array=($(ls))  # if "array" is already declared as an array then array=`ls` will also do the same thing
+
+# Adding elements to array once its declared
+declare -a MYARRAY
+MYARRAY+=("A")
+MYARRAY+=("B")
+MYARRAY+=("C")
+MYARRAY+=("D")
+
 declare -a                   # the variables are treaded as arrays
 declare -f                   # uses funtion names only
 declare -F                   # displays function names without definitions
